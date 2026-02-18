@@ -1,103 +1,153 @@
-⚡ Herlys-Tele ⚡
-Herlys-Tele là một framework Telegram Bot thế hệ mới, được xây dựng hoàn toàn bằng Node.js với kiến trúc Modular lấy cảm hứng từ Mirai Bot (Facebook). Thiết kế giúp việc phát triển, bảo trì và mở rộng tính năng trở nên cực kỳ đơn giản và hiệu quả.
+# ⚡ Herlys-Tele ⚡
 
-<p align="center"> <img src="https://via.placeholder.com/728x90/000000/FFFFFF?text=Herlys-Tele+v1.0.0" alt="Herlys-Tele Banner" /> </p><p align="center"> <strong>Trạng thái:</strong> Ổn định • <strong>Phiên bản:</strong> v1.0.0 • <strong>Khu vực:</strong> Asia/Ho_Chi_Minh 🇻🇳 </p>
-🌟 Tính năng nổi bật
-🚀 Core Engine mạnh mẽ: Tự động quét và load toàn bộ module từ thư mục modules/.
+**Herlys-Tele** là một framework Telegram Bot thế hệ mới, được xây dựng hoàn toàn bằng **Node.js** với kiến trúc **Modular** lấy cảm hứng từ Mirai Bot (Facebook).  
+Thiết kế giúp việc phát triển, bảo trì và mở rộng tính năng trở nên cực kỳ đơn giản và hiệu quả.
 
-🧩 Cấu trúc Mirai-style: Mỗi lệnh chỉ là một file .js độc lập → dễ bảo trì, dễ mở rộng.
+<p align="center">
+  <img src="https://via.placeholder.com/728x90/000000/FFFFFF?text=Herlys-Tele+v1.0.0" alt="Herlys-Tele Banner" />
+</p>
 
-🖼️ Media Rich ngay từ đầu: Hỗ trợ Welcome Video, GIF chào mừng, ảnh quảng bá từ hệ thống Media Herlys.
+<p align="center">
+  <strong>Trạng thái:</strong> Ổn định • 
+  <strong>Phiên bản:</strong> v1.0.0 • 
+  <strong>Khu vực:</strong> Asia/Ho_Chi_Minh 🇻🇳
+</p>
 
-🔌 Hệ sinh thái API tích hợp sẵn: Hơn 10+ dịch vụ (Weather, Capcut, VietQR, TikTok, GitHub, Imgur, IP-API, Sumi API…).
+---
 
-🛡️ Bảo mật & Phân quyền: Hệ thống Admin dựa trên adminIds, kiểm soát chặt chẽ quyền sử dụng lệnh.
+## 🌟 Tính năng nổi bật
 
-📂 Cấu trúc thư mục dự án
-text
+- 🚀 **Core Engine mạnh mẽ**: Tự động quét và load toàn bộ module từ thư mục `modules/`.
+- 🧩 **Cấu trúc Mirai-style**: Mỗi lệnh là một file `.js` độc lập → dễ bảo trì, dễ mở rộng.
+- 🖼️ **Media Rich ngay từ đầu**: Hỗ trợ Welcome Video, GIF chào mừng, ảnh quảng bá.
+- 🔌 **Hệ sinh thái API tích hợp sẵn**: 10+ dịch vụ (Weather, Capcut, VietQR, TikTok, GitHub, Imgur, IP-API, Sumi API…).
+- 🛡️ **Bảo mật & Phân quyền**: Hệ thống Admin dựa trên `adminIds`.
+
+---
+
+## 📂 Cấu trúc thư mục dự án
+
+```text
 Herlys-Tele/
 ├── modules/                # Tất cả các lệnh (tự động load)
 │   ├── menu.js             # Lệnh hiển thị danh sách lệnh
 │   └── TEMPLATE.js         # Mẫu để tạo module mới
 ├── index.js                # Core Engine - Điểm khởi chạy chính
-├── config.json             # Cấu hình Token, Prefix, Admin, API Keys, Media...
+├── config.json             # Cấu hình Token, Prefix, Admin, API Keys...
 ├── package.json            # Dependencies & Scripts
 └── README.md               # Tài liệu này
-⚡ Cài đặt & Khởi chạy nhanh
-Yêu cầu hệ thống
-Node.js: v16.x trở lên (khuyến nghị v18.x hoặc v20.x)
+```
 
-Telegram Bot Token: Tạo bot miễn phí qua @BotFather
+---
 
-Git (để clone repository)
+## ⚡ Cài đặt & Khởi chạy nhanh
 
-Các bước cài đặt
-Clone mã nguồn
+### 🔹 Yêu cầu hệ thống
 
-bash
+- Node.js v16.x trở lên (khuyến nghị v18.x hoặc v20.x)
+- Telegram Bot Token (tạo miễn phí qua @BotFather)
+- Git
+
+---
+
+### 🔹 Các bước cài đặt
+
+#### 1️⃣ Clone mã nguồn
+
+```bash
 git clone https://github.com/Quanhau2010/Herlys-Tele.git
 cd Herlys-Tele
-Cài đặt dependencies
+```
 
-bash
+#### 2️⃣ Cài đặt dependencies
+
+```bash
 npm install
-Cấu hình file config.json
+```
 
-json
+#### 3️⃣ Cấu hình file `config.json`
+
+```json
 {
   "token": "YOUR_BOT_TOKEN_HERE",
   "prefix": "/",
   "adminIds": [8022468254],
   "botName": "Herlys Bot"
 }
-Thêm các API key nếu cần (Weather, Imgur, Capcut, v.v.)
+```
 
-Khởi động bot
+Thêm API key nếu cần (Weather, Imgur, Capcut, v.v.).
 
-Chạy trực tiếp (test):
+---
 
-bash
+### 🔹 Khởi động bot
+
+#### ▶ Chạy test:
+
+```bash
 node index.js
-Chạy lâu dài (production - khuyến nghị):
+```
 
-bash
+#### 🚀 Chạy production (khuyến nghị dùng PM2):
+
+```bash
 npm install -g pm2
 pm2 start index.js --name "Herlys-Tele"
 pm2 save
 pm2 startup
-✍️ Hướng dẫn tạo module mới
-Mọi lệnh tuân thủ cấu trúc thống nhất:
+```
 
-javascript
+---
+
+## ✍️ Hướng dẫn tạo module mới
+
+Mỗi lệnh tuân thủ cấu trúc sau:
+
+```javascript
 module.exports = {
   config: {
-    name: "tenlenh",              // Tên lệnh (không dấu, không space)
+    name: "tenlenh",
     version: "1.0.0",
-    permission: 0,                // 0: Mọi người | 1: Chỉ Admin
+    permission: 0, // 0: Mọi người | 1: Chỉ Admin
     description: "Mô tả ngắn gọn về lệnh",
     usage: "/tenlenh [tham số]"
   },
 
   run: async ({ bot, msg, args, config }) => {
-    // Logic lệnh của bạn
-    await bot.sendMessage(msg.chat.id, "Chào mừng bạn đến với Herlys-Tele! ⚡");
+    await bot.sendMessage(
+      msg.chat.id,
+      "Chào mừng bạn đến với Herlys-Tele! ⚡"
+    );
   }
 };
-Lưu file vào modules/ (ví dụ: ping.js) và khởi động lại bot → tự động load.
+```
 
-🛰️ Các API & Dịch vụ đã tích hợp sẵn
-Loại	Dịch vụ	Chức năng chính
-Tài chính	VietQR	Tạo mã QR thanh toán ngân hàng
-Tiện ích	WeatherAPI, IP-API	Thời tiết, thông tin IP
-Giải trí	Capcut, TikTok, Sumi API	Thông tin video, tải nội dung
-Lưu trữ	Imgur API	Upload ảnh nhanh chóng
-Phát triển	GitHub API	Tương tác repo, issue, v.v.
-Dễ dàng mở rộng bằng cách thêm key vào config.json.
+Lưu file vào thư mục `modules/` (ví dụ: `ping.js`) và khởi động lại bot → hệ thống sẽ tự động load.
 
-🤝 Đóng góp & Bản quyền
-Tác giả: QuanHau & Herlys Team
+---
 
-Cảm hứng: Mirai Bot Project (Facebook)
+## 🛰️ Các API & Dịch vụ tích hợp
 
-Bản quyền: Giữ nguyên credit developer trong source. Không xóa/sửa thông tin tác giả.
+| Loại        | Dịch vụ                | Chức năng chính                    |
+|-------------|------------------------|-------------------------------------|
+| Tài chính   | VietQR                 | Tạo mã QR thanh toán ngân hàng     |
+| Tiện ích    | WeatherAPI, IP-API     | Thời tiết, thông tin IP            |
+| Giải trí    | Capcut, TikTok, Sumi   | Thông tin & tải nội dung video     |
+| Lưu trữ     | Imgur API              | Upload ảnh nhanh                   |
+| Phát triển  | GitHub API             | Tương tác repo, issue, v.v.        |
 
+Dễ dàng mở rộng bằng cách thêm key vào `config.json`.
+
+---
+
+## 🤝 Đóng góp & Bản quyền
+
+- **Tác giả:** QuanHau & Herlys Team  
+- **Cảm hứng:** Mirai Bot Project (Facebook)  
+- **Bản quyền:** Giữ nguyên credit developer trong source. Không xóa/sửa thông tin tác giả.
+
+---
+
+<p align="center">
+⭐ Đừng quên star repository nếu bạn thấy dự án hữu ích! ⭐
+</p>
