@@ -1,0 +1,30 @@
+{
+  "token": "7989078149:AAFzULl4OEgO2upMeoOuf0AkcDpRqP9nR8w",
+  "prefix": "/",
+  "adminIds": [8022468254],
+  "botName": "Herlys Bot",
+  "version": "1.0.0",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "imgurClientId": "c76eb7edd1459f3",
+  "weatherApiKey": "deae5206758c44f38b0184151232208",
+
+  "media": {
+    "welcome": "https://keyherlyswar.x10.mx/VID_20241009_190557_165.mp4",
+    "gif": "https://offvn.io.vn/bot.gif",
+    "muavip": "https://files.catbox.moe/rkvxsm.jpg"
+  },
+
+  "api": {
+    "herlys":  "https://keyherlyswar.x10.mx/Apidocs",
+    "offvn":   "https://offvn.x10.mx",
+    "gaitt":   "https://gaitiktok.onrender.com",
+    "ipapi":   "http://ip-api.com/json",
+    "github":  "https://api.github.com",
+    "weather": "http://api.weatherapi.com/v1",
+    "vietqr":  "https://img.vietqr.io/image",
+    "qr":      "https://api.qrserver.com/v1/create-qr-code",
+    "capcut":  "https://subhatde.id.vn/capcut/info",
+    "sumi":    "https://api.sumiproject.net",
+    "imgur":   "https://api.imgur.com/3/image"
+  }
+}

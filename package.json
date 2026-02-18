@@ -1,0 +1,21 @@
+{
+  "name": "herlys-bot-mirai",
+  "version": "1.0.0",
+  "description": "Herlys Telegram Bot — Mirai Module Style",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "gtts": "^0.2.1",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "engines": { "node": ">=16.0.0" },
+  "author": "HerlysWar",
+  "license": "MIT"
+}
