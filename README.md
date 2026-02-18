@@ -4,7 +4,7 @@
 Thiết kế giúp việc phát triển, bảo trì và mở rộng tính năng trở nên cực kỳ đơn giản và hiệu quả.
 
 <p align="center">
-  <img src="[https://via.placeholder.com/728x90/000000/FFFFFF?text=Herlys-Tele+v1.0.0](https://keyherlyswar.x10.mx/bannertele.png)" alt="Herlys-Tele Banner" />
+  <img src="https://keyherlyswar.x10.mx/bannertele.png" alt="Herlys-Tele Banner" />
 </p>
 
 <p align="center">
